@@ -21,7 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "OauthLiveImplicit", "OauthL
 		VWDPort = "1590"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AuthorizationCode", "AuthorizationCode\", "{EA86CE30-838B-48BB-9592-D72F359743E0}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AuthorizationCode", "AuthorizationCode\", "{9776847C-323B-4350-8427-6920C70812AE}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/AuthorizationCode"
@@ -53,10 +53,10 @@ Global
 		{13ADE88C-58BA-4949-87B6-1DCE8A8A5687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13ADE88C-58BA-4949-87B6-1DCE8A8A5687}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{13ADE88C-58BA-4949-87B6-1DCE8A8A5687}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{EA86CE30-838B-48BB-9592-D72F359743E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA86CE30-838B-48BB-9592-D72F359743E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA86CE30-838B-48BB-9592-D72F359743E0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA86CE30-838B-48BB-9592-D72F359743E0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9776847C-323B-4350-8427-6920C70812AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9776847C-323B-4350-8427-6920C70812AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9776847C-323B-4350-8427-6920C70812AE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9776847C-323B-4350-8427-6920C70812AE}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{A80A2917-67CA-4148-9B49-D2843D75B178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A80A2917-67CA-4148-9B49-D2843D75B178}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A80A2917-67CA-4148-9B49-D2843D75B178}.Release|Any CPU.ActiveCfg = Release|Any CPU
