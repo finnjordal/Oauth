@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Implcit</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var oauthParams = {};
+
+    var hash = window.location.hash.substring(1);
+    var pairs = hash.split('&');
+    for (item in pairs) {
+      var nvp = pairs[item];
+      var nvpSplit = nvp.split('=');
+      oauthParams[nvpSplit[0]] = nvpSplit[1];
+    }
+
+    window.opener.callApi(oauthParams['access_token']);
+    window.close();
+
+</script>
+</body>
+</html>

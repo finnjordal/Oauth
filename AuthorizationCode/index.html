@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Implicit</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <script type="text/javascript">
+    
+    $(function () {
+      makeLink();
+    });
+
+    function makeLink() {
+      var clientId = '00000000440D6853';
+      var authorizationUrlBase = 'https://login.live.com/oauth20_authorize.srf';
+      var redirectUri = 'http://oauth.jordal.dk/liveauthorizationcode/oauth2callback.ashx';
+      var scope = 'wl.basic wl.share';
+      var url = authorizationUrlBase;
+      url += '?response_type=code'
+          + '&redirect_uri=' + redirectUri
+          + '&client_id=' + clientId
+          + '&scope=' + scope;
+      $("#link").attr("href", url);
+    }
+    
+  </script>
+</head>
+
+<body>
+  <div>
+    <h2>Forsøg med Microsofts Live API: OAuth 2.0 Authorization code grant flow</h2>
+
+    <a id="link">Lad os få din Hotmail profil:</a>
+
+  </div>
+</body>
+</html>
