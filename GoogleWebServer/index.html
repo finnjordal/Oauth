@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Web Server</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <script type="text/javascript">
+    
+    $(function () {
+      makeLink();
+    });
+
+    function makeLink() {
+      var clientId = '185454440685.apps.googleusercontent.com';
+      var authorizationUrlBase = 'https://accounts.google.com/o/oauth2/auth';
+      var redirectUri = 'http://oauth.jordal.dk/googlewebserver/oauth2callback.ashx';
+      var scope = 'https://www.googleapis.com/auth/drive';
+      var url = authorizationUrlBase;
+      url += '?response_type=code'
+          + '&redirect_uri=' + redirectUri
+          + '&client_id=' + clientId
+          + '&scope=' + scope;
+      $("#link").attr("href", url);
+    }
+    
+  </script>
+</head>
+
+<body>
+  <div>
+    <h2>Forsøg med Google Web Server: OAuth 2.0 Authorization code grant flow</h2>
+
+    <a id="link">Lad os få Google profil:</a>
+
+  </div>
+</body>
+</html>
