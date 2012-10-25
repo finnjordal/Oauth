@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OauthLiveDesktop", "Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleWebServer", "GoogleWebServer\GoogleWebServer.csproj", "{DD0446E8-C205-4DE4-A58D-655DDA62F55B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleInstalledApplication", "GoogleInstalledApplication\GoogleInstalledApplication.csproj", "{62C1AB0D-8D3C-4AB6-AEE7-D594B85823F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth", "OAuth\OAuth.csproj", "{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,14 @@ Global
 		{DD0446E8-C205-4DE4-A58D-655DDA62F55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD0446E8-C205-4DE4-A58D-655DDA62F55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD0446E8-C205-4DE4-A58D-655DDA62F55B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C1AB0D-8D3C-4AB6-AEE7-D594B85823F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C1AB0D-8D3C-4AB6-AEE7-D594B85823F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C1AB0D-8D3C-4AB6-AEE7-D594B85823F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C1AB0D-8D3C-4AB6-AEE7-D594B85823F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
