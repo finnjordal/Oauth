@@ -76,6 +76,7 @@
   <ItemGroup>
     <Content Include="oauth2callback.ashx" />
     <None Include="Properties\PublishProfiles\Nyserver file share.pubxml" />
+    <None Include="Properties\PublishProfiles\Nyserver ftp.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
