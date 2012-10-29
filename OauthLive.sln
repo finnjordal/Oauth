@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleInstalledApplication"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth", "OAuth\OAuth.csproj", "{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleWebClientApplication", "GoogleWebClientApplication\GoogleWebClientApplication.csproj", "{BEBDD065-FAFE-4ACC-A207-FD66EE46B391}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{372C3FDA-9FB4-4759-93C3-5C1EF54F57CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBDD065-FAFE-4ACC-A207-FD66EE46B391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBDD065-FAFE-4ACC-A207-FD66EE46B391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBDD065-FAFE-4ACC-A207-FD66EE46B391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBDD065-FAFE-4ACC-A207-FD66EE46B391}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
