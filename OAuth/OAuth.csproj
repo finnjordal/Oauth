@@ -65,6 +65,7 @@
     <Content Include="bootstrap\img\glyphicons-halflings.png" />
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="microsoftlive.aspx" />
     <Content Include="css\style.css" />
     <Content Include="default.aspx" />
     <Content Include="js\jquery-1.7.2.min.js" />
@@ -143,6 +144,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="microsoftlive.aspx.cs">
+      <DependentUpon>microsoftlive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

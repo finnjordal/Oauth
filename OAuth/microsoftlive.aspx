@@ -1,24 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site.Master" AutoEventWireup="true"
-  CodeBehind="default.aspx.cs" Inherits="OAuth._default" %>
+  CodeBehind="microsoftlive.aspx.cs" Inherits="OAuth.MicrosoftLive" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <header id="home" class="jumbotron subhead">
     <div class="page-header">
-      <h1>Introduktion</h1>
+      <h1>Microsoft Lives implementation</h1>
     </div>
   </header>
   <section>
     <div class='row'>
       <div class="span8">
-        <p>Nærværende site indeholder en række eksperimenter med konkrete OAuth 2.0 implementationer.
-          Det drejer sig om <a href="microsftlive.aspx">Microsoft Lives implementation</a> og <a href="googleapi.aspx">Google API's implementation</a>
-        </p>
+      <h2>Web Server Application</h2>
+      <p>Microsoft gen benævnelse: <a href="http://msdn.microsoft.com/en-us/library/live/hh243647#authcodegrant">"Authorization code grant flow"</a></p>
+      <p><a href="http://oauth.jordal.dk/liveauthorizationcode/">Web application, som anvender dette flow</a>.</p>
       </div>
     </div>
   </section>
   <script type="text/javascript">
     $('#topbar li').removeClass('active');
-    var a = $("#topbar li a[href='default.aspx']")[0];
+    var a = $("#topbar li a[href='microsoft.live.aspx']")[0];
     var li = $(a).parent().addClass('active');
   </script>
 </asp:Content>
