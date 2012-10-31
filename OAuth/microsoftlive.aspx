@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site.Master" AutoEventWireup="true"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site.Master" AutoEventWireup="True"
   CodeBehind="microsoftlive.aspx.cs" Inherits="OAuth.MicrosoftLive" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -11,14 +11,17 @@
     <div class='row'>
       <div class="span8">
       <h2>Web Server Application</h2>
-      <p>Microsoft gen benævnelse: <a href="http://msdn.microsoft.com/en-us/library/live/hh243647#authcodegrant">"Authorization code grant flow"</a></p>
-      <p><a href="http://oauth.jordal.dk/liveauthorizationcode/">Web application, som anvender dette flow</a>.</p>
+      <p>Microsoft benævner dette OAuth 2.0 flow: <a href="http://msdn.microsoft.com/en-us/library/live/hh243647#authcodegrant">"Authorization code grant flow"</a></p>
+      <p><a href="http://oauth.jordal.dk/oauthmicrosoftwebserverapplication">Web application, som anvender dette flow</a>.</p>
+      <h2>Web Client Application</h2>
+      <p>Microsoft benævner dette OAuth 2.0 flow: <a href="http://msdn.microsoft.com/en-us/library/live/hh243647#implicitgrant">"Implicite grant flow"</a></p>
+      <p><a href="http://oauth.jordal.dk/oauthmicrosoftwebclientapplication">Web application, som anvender dette flow</a>.</p>
       </div>
     </div>
   </section>
   <script type="text/javascript">
     $('#topbar li').removeClass('active');
-    var a = $("#topbar li a[href='microsoft.live.aspx']")[0];
+    var a = $("#topbar li a[href='microsoftlive.aspx']")[0];
     var li = $(a).parent().addClass('active');
   </script>
 </asp:Content>

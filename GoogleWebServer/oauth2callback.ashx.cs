@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.IO;
 using System.Json;
 using System.Collections.Generic;
+//using System.Threading.Tasks;
 
 public class oauth2callback : IHttpHandler
 {
@@ -26,7 +27,8 @@ public class oauth2callback : IHttpHandler
     }
   }
 
-  public async void GetPage(HttpContext context)
+  // problemer med det asynkrone i forholde til httphandlere. Anvend webrequest som i microsoft udgaven
+  public void GetPage(HttpContext context)
   {
     context.Response.ContentType = "text/html; charset=utf-8";
     HttpWriter sw = (HttpWriter)context.Response.Output;

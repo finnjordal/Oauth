@@ -65,6 +65,7 @@
     <Content Include="bootstrap\img\glyphicons-halflings.png" />
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="googleapi.aspx" />
     <Content Include="microsoftlive.aspx" />
     <Content Include="css\style.css" />
     <Content Include="default.aspx" />
@@ -144,6 +145,16 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="googleapi.aspx.cs">
+      <DependentUpon>googleapi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="googleapi.aspx.designer.cs">
+      <DependentUpon>googleapi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="microsoftlive.aspx.cs">
       <DependentUpon>microsoftlive.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -152,17 +163,16 @@
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="microsoftlive.aspx.designer.cs">
+      <DependentUpon>microsoftlive.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="site.Master.cs">
       <DependentUpon>site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="site.Master.designer.cs">
+      <DependentUpon>site.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -191,7 +201,7 @@
     <Content Include="js\syntaxhighlighter_3.0.83\tests\.rvmrc" />
     <Content Include="js\syntaxhighlighter_3.0.83\tests\webrick.rb" />
     <Content Include="js\syntaxhighlighter_3.0.83\tests\webrick.sh" />
-    <Content Include="Site1.Master" />
+    <None Include="Properties\PublishProfiles\Nyserver ftp.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -212,7 +222,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>5991</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:12413/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

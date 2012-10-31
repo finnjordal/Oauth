@@ -41,7 +41,7 @@ public class oauth2callback : IHttpHandler
     request.Method = "POST";
     request.ContentType = "application/x-www-form-urlencoded";
     StreamWriter w = new StreamWriter(request.GetRequestStream());
-    string clientInfo = @"client_id=00000000440D6853&client_secret=" + HttpUtility.UrlEncode("drkuSjtt-lV0XBqFtFXxa8jhzFkBb3sA") + "&code="+code+"&grant_type=authorization_code&redirect_uri=" + HttpUtility.UrlEncode("http://oauth.jordal.dk/liveauthorizationcode/oauth2callback.ashx");
+    string clientInfo = @"client_id=00000000440D6853&client_secret=" + HttpUtility.UrlEncode("drkuSjtt-lV0XBqFtFXxa8jhzFkBb3sA") + "&code="+code+"&grant_type=authorization_code&redirect_uri=" + HttpUtility.UrlEncode("http://oauth.jordal.dk/oauthmicrosoftwebserverapplication/oauth2callback.ashx");
     w.Write(clientInfo);
     w.Close();  
     WebResponse response = request.GetResponse();

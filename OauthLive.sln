@@ -1,49 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "OauthLiveImplicit", "OauthLiveImplicit\", "{13ADE88C-58BA-4949-87B6-1DCE8A8A5687}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/OauthLiveImplicit"
-		Debug.AspNetCompiler.PhysicalPath = "OauthLiveImplicit\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\OauthLiveImplicit\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/OauthLiveImplicit"
-		Release.AspNetCompiler.PhysicalPath = "OauthLiveImplicit\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\OauthLiveImplicit\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "1590"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftInstalledApplication", "WindowsFormsApplication1\MicrosoftInstalledApplication.csproj", "{29615C58-62F0-4FCC-BFCF-7C1DD65A3D45}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AuthorizationCode", "AuthorizationCode\", "{9776847C-323B-4350-8427-6920C70812AE}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		Debug.AspNetCompiler.VirtualPath = "/AuthorizationCode"
-		Debug.AspNetCompiler.PhysicalPath = "AuthorizationCode\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\AuthorizationCode\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/AuthorizationCode"
-		Release.AspNetCompiler.PhysicalPath = "AuthorizationCode\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\AuthorizationCode\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "3829"
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OauthLiveDesktop", "WindowsFormsApplication1\OauthLiveDesktop.csproj", "{29615C58-62F0-4FCC-BFCF-7C1DD65A3D45}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleWebServer", "GoogleWebServer\GoogleWebServer.csproj", "{DD0446E8-C205-4DE4-A58D-655DDA62F55B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleWebServerApplication", "GoogleWebServer\GoogleWebServerApplication.csproj", "{DD0446E8-C205-4DE4-A58D-655DDA62F55B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleInstalledApplication", "GoogleInstalledApplication\GoogleInstalledApplication.csproj", "{62C1AB0D-8D3C-4AB6-AEE7-D594B85823F6}"
 EndProject
@@ -53,20 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleWebClientApplication"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftWebServerApplication", "MicrosoftWebServerApplication\MicrosoftWebServerApplication.csproj", "{CD666A9C-5095-4DA1-8C7B-FB36F6CA2B11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftWebClientApplication", "MicrosoftWebClientApplication\MicrosoftWebClientApplication.csproj", "{AD998712-FD4C-4B6F-812C-F1A57A9CA09F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{13ADE88C-58BA-4949-87B6-1DCE8A8A5687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13ADE88C-58BA-4949-87B6-1DCE8A8A5687}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13ADE88C-58BA-4949-87B6-1DCE8A8A5687}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{13ADE88C-58BA-4949-87B6-1DCE8A8A5687}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{9776847C-323B-4350-8427-6920C70812AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9776847C-323B-4350-8427-6920C70812AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9776847C-323B-4350-8427-6920C70812AE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{9776847C-323B-4350-8427-6920C70812AE}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{29615C58-62F0-4FCC-BFCF-7C1DD65A3D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{29615C58-62F0-4FCC-BFCF-7C1DD65A3D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29615C58-62F0-4FCC-BFCF-7C1DD65A3D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -91,6 +45,10 @@ Global
 		{CD666A9C-5095-4DA1-8C7B-FB36F6CA2B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD666A9C-5095-4DA1-8C7B-FB36F6CA2B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD666A9C-5095-4DA1-8C7B-FB36F6CA2B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD998712-FD4C-4B6F-812C-F1A57A9CA09F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD998712-FD4C-4B6F-812C-F1A57A9CA09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD998712-FD4C-4B6F-812C-F1A57A9CA09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD998712-FD4C-4B6F-812C-F1A57A9CA09F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

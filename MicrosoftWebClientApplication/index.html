@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Implicit</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <script type="text/javascript">
+    
+    $(function () {
+      $("#startoauthflow").bind("click", startOauth);
+    });
+
+    function startOauth() {
+      var clientId = '00000000440D6853';
+      var authorizationUrlBase = 'https://login.live.com/oauth20_authorize.srf';
+      var redirectUri = 'http://oauth.jordal.dk/oauthmicrosoftwebclientapplication/oauth2callback.html';
+      var scope = 'wl.basic';
+      var url = authorizationUrlBase;
+      url += '?response_type=token'
+          + '&redirect_uri=' + redirectUri
+          + '&client_id=' + clientId
+          + '&scope=' + scope;
+      var w = window.open(url, 'oauth', 'width=500,height=400');
+    }
+
+    function callApi(accessToken) {
+      var url = 'https://apis.live.net/v5.0/me?';
+      url += "access_token=" + accessToken;
+      $.ajax({
+        'url': url,
+        'dataType': 'jsonp',
+        'success': function (data) {
+          setResponse(data);
+        }
+      });
+    }
+
+    function setResponse(response) {
+      var person = $("#person");
+      var navn = response.name;
+      person.append('<p>Dit navn er ' + navn + '</p>');
+    }
+
+  </script>
+</head>
+
+<body>
+  <div>
+    <h2>Forsøg med Microsofts Live API: OAuth 2.0 Implicit grant flow</h2>
+
+    <p>Lad os få din Hotmail profil:</p>
+
+    <input id="startoauthflow" type="button" value="Tryk her" />
+  </div>
+  <div id="person">
+  </div>
+</body>
+</html>
