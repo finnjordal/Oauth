@@ -16,6 +16,9 @@
       <h2>Web Client Application</h2>
       <p>Microsoft benævner dette OAuth 2.0 flow: <a href="http://msdn.microsoft.com/en-us/library/live/hh243647#implicitgrant">"Implicite grant flow"</a></p>
       <p><a href="http://oauth.jordal.dk/oauthmicrosoftwebclientapplication">Web application, som anvender dette flow</a>.</p>
+      <h2>Installed Application</h2>
+      <p>Microsofts beskrivelse af  <a href="http://msdn.microsoft.com/en-us/library/live/hh826529.aspx">"OAuth 2.0 for Installed Applications"</a></p>
+      <p>Installed applications ligger ikke på webbet, men på min PC :)</p>
       </div>
     </div>
   </section>

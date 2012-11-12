@@ -16,6 +16,9 @@
       <h2>Web Client Application</h2>
       <p>Googles beskrivelse af  <a href="https://developers.google.com/accounts/docs/OAuth2UserAgent">"OAuth 2.0 for Client-side Applications"</a></p>
       <p><a href="http://oauth.jordal.dk/oauthgooglewebclientapplication">Web application, som anvender dette flow</a>.</p>
+      <h2>Installed Application</h2>
+      <p>Googles beskrivelse af  <a href="https://developers.google.com/accounts/docs/OAuth2InstalledApp">"OAuth 2.0 for Installed Applications"</a></p>
+      <p>Installed applications ligger ikke på webbet, men på min PC :)</p>
       </div>
     </div>
   </section>

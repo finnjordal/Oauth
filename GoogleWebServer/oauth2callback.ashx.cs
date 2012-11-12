@@ -48,32 +48,55 @@ public class oauth2callback : IHttpHandler
       {
         sw.Write("<p>code: " + code + "</p>");
 
-        HttpClient client = new HttpClient();
-        var fueColl = new Dictionary<string, string>();
-        fueColl["client_id"] = "185454440685.apps.googleusercontent.com";
-        fueColl["client_secret"] = "bgHAL45erk_QC-F-wEGfRmbl";
-        fueColl["code"] = code;
-        fueColl["grant_type"] = "authorization_code";
-        fueColl["redirect_uri"] = "http://oauth.jordal.dk/oauthgooglewebserverapplication/oauth2callback.ashx";
-        HttpContent content = new FormUrlEncodedContent(fueColl);
-        HttpResponseMessage response = await client.PostAsync("https://accounts.google.com/o/oauth2/token", content);
-        bool statusOk = response.IsSuccessStatusCode;
-        string responseBody = await response.Content.ReadAsStringAsync();
-        sw.Write("<p>response: " + responseBody + "</p>");
-        JsonObject accessInfo = (JsonObject)JsonObject.Parse(responseBody);
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://accounts.google.com/o/oauth2/token");
+        request.Method = "POST";
+        request.ContentType = "application/x-www-form-urlencoded";
+        StreamWriter w = new StreamWriter(request.GetRequestStream());
+        string clientInfo = @"client_id=185454440685.apps.googleusercontent.com&client_secret=" + HttpUtility.UrlEncode("bgHAL45erk_QC-F-wEGfRmbl") + "&code=" + code + "&grant_type=authorization_code&redirect_uri=" + HttpUtility.UrlEncode("http://oauth.jordal.dk/oauthgooglewebserverapplication/oauth2callback.ashx");
+        w.Write(clientInfo);
+        w.Close();
+        WebResponse response = request.GetResponse();
+        JsonObject accessInfo = (JsonObject)JsonObject.Load(response.GetResponseStream());
         string accessToken = (string)accessInfo["access_token"];
         sw.Write("<p>access_token: " + accessToken + "</p>");
 
-        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
-        response = await client.GetAsync("https://www.googleapis.com/drive/v2/files");
-        statusOk = response.IsSuccessStatusCode;
-        string filesstring = await response.Content.ReadAsStringAsync();
-        JsonObject files = (JsonObject)JsonObject.Parse(filesstring);
+        //HttpClient client = new HttpClient();
+        //var fueColl = new Dictionary<string, string>();
+        //fueColl["client_id"] = "185454440685.apps.googleusercontent.com";
+        //fueColl["client_secret"] = "bgHAL45erk_QC-F-wEGfRmbl";
+        //fueColl["code"] = code;
+        //fueColl["grant_type"] = "authorization_code";
+        //fueColl["redirect_uri"] = "http://oauth.jordal.dk/oauthgooglewebserverapplication/oauth2callback.ashx";
+        //HttpContent content = new FormUrlEncodedContent(fueColl);
+        //HttpResponseMessage response = await client.PostAsync("https://accounts.google.com/o/oauth2/token", content);
+        //bool statusOk = response.IsSuccessStatusCode;
+        //string responseBody = await response.Content.ReadAsStringAsync();
+        //sw.Write("<p>response: " + responseBody + "</p>");
+        //JsonObject accessInfo = (JsonObject)JsonObject.Parse(responseBody);
+        //string accessToken = (string)accessInfo["access_token"];
+        //sw.Write("<p>access_token: " + accessToken + "</p>");
+
+
+        request = (HttpWebRequest)WebRequest.Create("https://www.googleapis.com/drive/v2/files");
+        request.Headers.Add("Authorization", "Bearer " + accessToken);
+        response = request.GetResponse();
+        JsonObject files = (JsonObject)JsonObject.Load(response.GetResponseStream());
         JsonArray filelist = (JsonArray)files["items"];
         foreach (JsonObject file in filelist)
         {
           sw.Write("<p>" + file["title"].ToString() + "</p>");
         }
+
+        //client.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
+        //response = await client.GetAsync("https://www.googleapis.com/drive/v2/files");
+        //statusOk = response.IsSuccessStatusCode;
+        //string filesstring = await response.Content.ReadAsStringAsync();
+        //JsonObject files = (JsonObject)JsonObject.Parse(filesstring);
+        //JsonArray filelist = (JsonArray)files["items"];
+        //foreach (JsonObject file in filelist)
+        //{
+        //  sw.Write("<p>" + file["title"].ToString() + "</p>");
+        //}
 
 
       }
